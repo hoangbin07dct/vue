@@ -1,0 +1,45 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "entry",
+        "corejs": 3
+      }
+    ],
+    "@babel/preset-react",
+    "@emotion/babel-preset-css-prop",
+    "@babel/preset-typescript"
+  ],
+  "plugins": [
+    [
+      "import",
+      {
+        "libraryName": "ant-design-vue",
+        "libraryDirectory": "es",
+        "style": "css"
+      }
+    ],
+    [
+      "@babel/plugin-proposal-optional-chaining"
+    ],
+    [
+      "@babel/plugin-syntax-dynamic-import"
+    ],
+    [
+      "@babel/plugin-proposal-decorators",
+      {
+        "legacy": true
+      }
+    ],
+    [
+      "@babel/plugin-proposal-class-properties",
+      {
+        "loose": true
+      }
+    ],
+    [
+      "emotion"
+    ]
+  ]
+}

@@ -1,0 +1,99 @@
+@import '../css/_config/function';
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.modal-window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: 0.5s;
+  width: 100%;
+  min-width: 250px;
+  max-width: 350px;
+  background: white;
+  box-shadow: 0 0 rem(10) rgba(0, 0, 0, 0.5);
+  transform: translate(-50%, -50%);
+  padding: rem(20);
+  color: black;
+  text-align: center;
+
+  p {
+    font-size: rem(18);
+    margin-bottom: rem(20);
+  }
+}
+
+.modal-window .actions {
+  display: flex;
+  justify-content: center;
+}
+
+.actions button {
+  cursor: pointer;
+  width: rem(120);
+  height: rem(40);
+  margin: 0 rem(5);
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: rem(18);
+  cursor: pointer;
+  border-radius: rem(4);
+  transition: 0.3s background ease, 0.3s color ease;
+}
+
+.actions .cancel {
+  color: black !important;
+  background: #ddd;
+  &:hover {
+    background-color: #ababab;
+    color: #fff !important;
+  }
+}
+
+.actions .confirm {
+  background: #e7141a;
+  box-shadow: 0 rem(6) rem(17) 0 rgba(#000,0.1);
+  &:hover {
+    background-color: #fff;
+    color: #e7141a;
+  }
+}
+
+.actions .submit {
+  background: #3c4b64;
+  box-shadow: 0 rem(6) rem(17) 0 rgba(#000,0.1);
+  &:hover {
+    background-color: #fff;
+    color: #3c4b64;
+  }
+}
+
+.appear-enter {
+  opacity: 0;
+}
+
+.appear-enter .modal-window {
+  transform: translate(-75%, -50%);
+}
+
+.appear-enter-active {
+  transition: 0.5s;
+}
+
+.appear-leave-active .modal-window {
+  transform: translate(0, -50%);
+}
+
+.appear-leave-active {
+  opacity: 0;
+  transition: 0.5s;
+}

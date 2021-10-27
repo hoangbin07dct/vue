@@ -1,0 +1,71 @@
+@import '../css/_config/function';
+.chart {
+  margin-top: rem(20);
+  &__timeControl {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__tab {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      width: rem(600);
+      dt {
+        margin-right: rem(10);
+      }
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-width: rem(65);
+          padding: rem(5) rem(10);
+          background: #ccc;
+          border-radius: rem(4);
+          cursor: pointer;
+          color: #fff;
+          &.active,
+          &:hover {
+            background: $keyColor;
+          }
+          &:not(:last-child) {
+            margin-right: rem(5);
+          }
+        }
+      }
+    }
+    &__time {
+      display: flex;
+      flex-wrap: wrap;
+      width: rem(580);
+      margin-right: rem(150);
+      justify-content: space-between;
+      .txtDate,
+      .txtYear,
+      .txtMonth,
+      .txtTime {
+        &__output {
+          width: rem(190);
+          height: rem(35);
+          padding: rem(4) rem(10);
+          border: 1px solid #b1b7c1;
+          outline: none;
+          border-radius: rem(4);
+          font-size: rem(16);
+        }
+      }
+      .txtYear,
+      .txtMonth,
+      .txtTime {
+        &__output {
+          width: rem(90);
+        }
+      }
+    }
+  }
+  &__lineChart {
+    margin-top: rem(40);
+  }
+}

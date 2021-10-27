@@ -1,0 +1,45 @@
+@import '../css/_config/function';
+.Pagination {
+  display: flex;
+  justify-content: center;
+  li.disabled {
+    a {
+      cursor: not-allowed;
+      color: rgba(0, 0, 0, 0.26) !important;
+      background-color: #fff !important;
+    }
+  }
+  li.active a {
+    background-color: $keyColor;
+    color: #fff;
+  }
+
+  a {
+    height: rem(45);
+    min-width: rem(45);
+    line-height: rem(48);
+    padding: 0 rem(4);
+    border-radius: rem(2);
+    margin: rem(4) rem(2);
+    text-align: center;
+    color: $keyColor;
+    background: #fff;
+    text-decoration: none;
+    vertical-align: bottom;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: rem(16);
+    box-sizing: border-box;
+    border: 1px solid $keyColor;
+    svg {
+      width: rem(20);
+      height: rem(20);
+    }
+  }
+  a:hover {
+    background-color: $keyColor;
+    color: #fff;
+  }
+}

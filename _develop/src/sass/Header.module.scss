@@ -1,0 +1,73 @@
+@import '../css/_config/function';
+.wrapper {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: rgba(#000, 0.1) 0px rem(6) rem(17) 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 rem(10) 0 rem(190);
+    background-color: #fff;
+    height: rem(50);
+    align-items: center;
+    transition: padding 0.4s ease-in-out;
+    will-change: padding;
+    &__logo {
+      line-height: 1;
+      font-size: 0;
+      a {
+        display: inline-block;
+      }
+      &__image {
+        img {
+          width: rem(150);
+          vertical-align: middle;
+        }
+      }
+    }
+    &__right {
+      display: flex;
+      align-items: center;
+      font-size: rem(14);
+      p {
+        margin-right: rem(10);
+        a {
+          display: flex;
+          align-items: center;
+          &:hover {
+            color: $hoverColor;
+          }
+        }
+        i {
+          color: #666;
+          font-size: rem(25);
+        }
+        span {
+          display: inline-block;
+          margin-left: rem(8);
+        }
+      }
+    }
+  }
+  &.full {
+    .header {
+      padding-left: rem(50);
+    }
+  }
+}
+.user {
+  span {
+    font-weight: bold;
+    margin-left: 10px;
+  }
+}
+.logOut {
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}

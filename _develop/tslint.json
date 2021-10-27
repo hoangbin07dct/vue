@@ -1,0 +1,75 @@
+{
+  "lintOptions": {
+    "typeCheck": true
+  },
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:recommended"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "jsRules": {},
+  "rules": {
+    // importステートメントを除き、requireステートメントの使用を禁止します。
+    "no-var-requires": true,
+    // 文末にセミコロンがあること (true)
+    "semicolon": [true, "always", "ignore-bound-class-methods"],
+    // if・for・do・while の制御構文にブレースがあること (true)
+    "curly": false,
+    // 1行の最大桁数を120桁にする (true・120)
+    "max-line-length": false,
+    //-  セミコロン設定
+    "quotemark": [true, "single", "jsx-double"],
+    //-  objectのキーの整列
+    "object-literal-sort-keys": false,
+    // for-of推奨
+    "prefer-for-of": true,
+    // forin - for ... inステートメントをステートメントでフィルタリングする必要がありifます。
+    "forin": true,
+    //-  importの整列
+    "ordered-imports": false,
+    //-  console許可
+    "no-console": false,
+    //-  カンマ設定
+    "trailing-comma": [true, {
+      "multiline": "never",
+      "singleline": "never"
+    }],
+    // func前にスペース
+    // "space-before-function-paren": [true, "always"],
+    // 未使用の式文を許可しません。
+    "no-unused-expression": false,
+    // caseのスルーを禁止
+    "no-switch-case-fall-through": true,
+    // 空白ブロックcatchだけ許可
+    "no-empty": [true, "allow-empty-catch"],
+    // while事故防止
+    "prefer-while": true,
+    // undefinedでの初期化防止
+    "no-unnecessary-initializer": true,
+    // const使え
+    "prefer-const": true,
+    // 何もしないコンストラクタいらない
+    "unnecessary-constructor": true,
+    // varオワコンだからだめ
+    "no-var-keyword": true,
+    // 要素なしarrayだめ
+    "no-sparse-arrays": true,
+    // 変数重複だめ
+    "no-duplicate-variable": true,
+    // no-duplicate-super - 'super（）'がコンストラクタ内に2回現れると警告します。
+    "no-duplicate-super": true,
+    // no-async-without-await - asyncとマークされた関数には、awaitまたはreturnステートメントを含める必要があります。
+    "no-async-without-await": true,
+    // no-conditional-assignment - 条件式でのいかなる種類の代入も許可しません。
+    "no-conditional-assignment": true,
+    // <Type> より as Type と書かせる (true)
+    "no-angle-bracket-type-assertion": true,
+    // x === true のような Boolean との比較を冗長的に書かせない (true) : 要 --type-check
+    "no-boolean-literal-compare": true,
+    // 1ファイルあたりの総クラス数
+    "max-classes-per-file": [true, 5]
+  },
+  "rulesDirectory": []
+}

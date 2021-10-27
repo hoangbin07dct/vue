@@ -1,0 +1,65 @@
+@import '../css/_config/function';
+.search {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: rem(20) 0;
+  .item_col {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin-right: rem(20);
+    label {
+      flex: 0 1 auto;
+      margin-right: rem(10);
+      line-height: 1.2;
+    }
+  }
+  .form-select {
+    flex: 1 0;
+  }
+  input,
+  select {
+    flex: 1 0;
+    background-color: #fff;
+    border: 1px solid #b1b7c1;
+    border-radius: rem(6);
+    color: #374253;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    line-height: 1.5;
+    padding: 0 rem(10);
+    height: rem(40);
+    width: 100%;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    will-change: border-color, box-shadow;
+  }
+  .custom-select {
+    flex: 1 0;
+  }
+  .group-btn {
+    // flex: 1;
+  }
+  .btn-search {
+    width: rem(90);
+    height: rem(40);
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .search {
+    justify-content: space-between;
+    .item_col {
+      flex: 0 1 48%;
+      width: 50%;
+      margin-right: 0;
+      margin-bottom: rem(20);
+    }
+    .group-btn {
+      width: 100%;
+      text-align: right;
+    }
+  }
+}

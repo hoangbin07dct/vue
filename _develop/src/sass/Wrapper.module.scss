@@ -1,0 +1,128 @@
+@import '../css/_config/function';
+.wrapper {
+  background-color: #eaeaea;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-left: rem(180);
+  width: 100%;
+  transition: padding .4s ease-in-out;
+  will-change: padding;
+  &.full {
+    padding-left: rem(40);
+  }
+}
+.pageInner {
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: .25rem;
+  padding: 0 rem(20) rem(30);
+  position: relative;
+}
+
+.groupBtn {
+  position: absolute;
+  top: 12px;
+  right: 36px;
+}
+
+// Form
+.page__content {
+  margin: 16px;
+}
+.form-item-group {
+  display: flex;
+  margin: 0 -10px;
+}
+.form-item {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px 25px;
+  position: relative;
+  width: 100%;
+  .form-label {
+    align-self: flex-start;
+    font-size: 15px;
+    margin-bottom: 5px;
+    position: relative;
+    &:after {
+      content: none;
+      padding: rem(2) rem(5);
+      background: #bd362f;
+      color: #fff;
+      margin-left: rem(10);
+    }
+  }
+  p {
+    color: #b1b7c1;
+    height: rem(40);
+    border: 1px solid #b1b7c1;
+    display: flex;
+    align-items: center;
+    padding: 0 rem(10);
+    border-radius: rem(6);
+    font-size: rem(16);
+    font-weight: 400;
+  }
+  .input__inner {
+    background-color: #fff;
+    border: 1px solid #b1b7c1;
+    border-radius: rem(6);
+    color: #374253;
+    display: block;
+    font-size: rem(16);
+    font-weight: 400;
+    outline: none;
+    line-height: 1.5;
+    padding: 0 rem(10);
+    height: rem(40);
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    width: 100%;
+    will-change: border-color,box-shadow;
+  }
+  &__error {
+    color: #bd362f;
+    font-size: rem(12);
+    display: block;
+    line-height: 1.5;
+    margin-top: rem(5);
+  }
+  &--required {
+    .form-label {
+      &:after {
+        content: "必須";
+      }
+    }
+  }
+}
+.form-select {
+  position: relative;
+  &:after {
+    position: absolute;
+    content: '';
+    top: 1.7rem;
+    right: 1rem;
+    width: 0;
+    height: 0;
+    border: 0.5rem solid transparent;
+    border-color: #b1b7c1 transparent transparent transparent;
+  }
+  select {
+    background-color: #fff;
+    border: 1px solid #b1b7c1;
+    border-radius: rem(6);
+    color: #374253;
+    display: block;
+    font-size: rem(16);
+    font-weight: 400;
+    outline: none;
+    line-height: 1.5;
+    padding: 0 rem(10);
+    height: rem(40);
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    width: 100%;
+    will-change: border-color,box-shadow;
+    appearance: none;
+    cursor: pointer;
+  }
+}

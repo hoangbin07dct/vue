@@ -1,0 +1,54 @@
+- var subDirectory = process.env.npm_package_config_subDirectory;
+
+block meta
+  -
+    var title = "サンプル";
+    var description = "説明が入ります";
+    //- var keywords = "a,b,c,d,e"
+    var url = "http://example.co.jp/"
+
+block subTitle
+  - var pageTitle = ''
+
+-
+  if (pageTitle.length) {
+    pageTitle = pageTitle + ' | ';
+  }
+
+mixin pic(pc, sp, alt='')
+  picture
+    source(media='(min-width: 769px)', srcset=pc)
+    source(media='(max-width: 768px)', srcset=sp)
+    img(src=sp, srcset=sp, alt=alt, loading="lazy")
+
+mixin img(src, alt='')
+  img(src=src, alt=alt, loading="lazy")
+
+doctype html
+html(lang='ja')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no')
+    meta(http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0")
+    meta(http-equiv="Cache-Control" content="post-check=0, pre-check=0, false")
+    meta(http-equiv="Pragma" content="no-cache")
+    meta(name="robots" content="noindex")
+    title #{pageTitle}#{title}
+
+    link(rel='shortcut icon', href='./favicon.ico')
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.googleapis.com' crossorigin)
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap')
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap')
+
+    block stylesheet
+      link(rel="stylesheet", href='/' + subDirectory + process.env.npm_package_config_assetPath + '/css/common.css')
+
+  body
+    #root.root
+
+    block script
+      script(src='/' + subDirectory + process.env.npm_package_config_assetPath + '/js/config.js', defer)
+      script(src='/' + subDirectory + process.env.npm_package_config_assetPath + '/js/vendor.js', defer)
+      script(src='/' + subDirectory + process.env.npm_package_config_assetPath + '/js/bundle.js', defer)

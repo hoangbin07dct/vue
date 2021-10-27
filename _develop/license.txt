@@ -1,0 +1,59 @@
+==== LICENSE ====
+
+react 17.0.2
+https://reactjs.org/
+
+MIT License
+Copyright (c) Facebook, Inc. and its affiliates.
+https://github.com/facebook/react/blob/main/LICENSE
+
+
+
+react-router-dom 5.2.0
+https://github.com/remix-run/react-router
+
+MIT License
+Copyright (c) React Training
+https://github.com/remix-run/react-router/blob/main/LICENSE
+
+
+
+prop-types 15.7.2
+https://reactjs.org/
+
+MIT License
+Copyright (c) 2013-present, Facebook, Inc.
+https://github.com/facebook/prop-types/blob/main/LICENSE
+
+
+react-redux 7.2.5
+https://github.com/reduxjs/react-redux
+
+The MIT License (MIT)
+Copyright (c) 2015-present Dan Abramov
+https://github.com/reduxjs/react-redux/blob/master/LICENSE.md
+
+
+
+redux-thunk 2.3.0
+https://github.com/reduxjs/redux-thunk
+
+The MIT License (MIT)
+Copyright (c) 2015-present Dan Abramov
+https://github.com/reduxjs/redux-thunk/blob/master/LICENSE.md
+
+
+
+axios 0.22.0
+https://axios-http.com/
+
+MIT License
+Copyright (c) 2014-present Matt Zabriskie
+https://github.com/axios/axios/blob/master/LICENSE
+
+
+
+react-datetime 3.1.1
+https://github.com/arqex/react-datetime
+
+MIT Licensed

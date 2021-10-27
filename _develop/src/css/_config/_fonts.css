@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "glyphs";
+  src: url('../fonts/glyphs.eot?t=1635142950721'); /* IE9*/
+  src: url('../fonts/glyphs.eot?t=1635142950721#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url("../fonts/glyphs.woff2?t=1635142950721") format("woff2"),
+  url("../fonts/glyphs.woff?t=1635142950721") format("woff"),
+  url('../fonts/glyphs.ttf?t=1635142950721') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../fonts/glyphs.svg?t=1635142950721#glyphs') format('svg'); /* iOS 4.1- */
+}
+
+[class^="glyphs-"], [class*=" glyphs-"] {
+  font-family: 'glyphs' !important;
+  font-size:1em;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.glyphs-icon_arrow_left:before { content: "\ea01"; }
+.glyphs-icon_arrow_right:before { content: "\ea02"; }
+.glyphs-icon_avt:before { content: "\ea03"; }
+.glyphs-icon_delete:before { content: "\ea04"; }
+.glyphs-icon_edit:before { content: "\ea05"; }
+.glyphs-icon_new:before { content: "\ea06"; }
+.glyphs-icon_next:before { content: "\ea07"; }
+.glyphs-icon_prev:before { content: "\ea08"; }
+.glyphs-icon_reset:before { content: "\ea09"; }
+.glyphs-icon_save:before { content: "\ea0a"; }
+.glyphs-icon_search:before { content: "\ea0b"; }

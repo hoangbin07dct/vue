@@ -1,0 +1,16 @@
+@import '../css/_config/function';
+.pageHeader {
+  align-items: center;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  padding: rem(18) rem(16);
+  .pageTitle {
+    margin-bottom: 0;
+  }
+  .pageOption {
+    button {
+      background: #3c4b64;
+    }
+  }
+}
